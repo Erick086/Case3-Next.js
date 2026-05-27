@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Paleta Oficial Meta */
+  --color-meta-dark: #131936;
+  --color-meta-cyan: #22c0ff;
+  --color-meta-light: #f4f7ff;
+
+  /* Consome a variável gerada pelo next/font no layout.tsx */
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+
+  /* Gradiente Oficial */
+  --background-image-meta-gradient: linear-gradient(
+    90deg,
+    #2ad8ff 0%,
+    #0067ff 100%
+  );
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  /* Regra de identidade da Meta: Títulos sempre em minúscula e em dark blue */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply lowercase font-semibold text-meta-dark;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Destaques (strong) sempre com a cor de destaque (cyan) */
+  strong {
+    @apply font-bold text-meta-cyan;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  /* Utilitários prontos para eles usarem o gradiente da marca em botões ou textos */
+  .bg-meta-gradient {
+    background-image: var(--background-image-meta-gradient);
+  }
+
+  .text-meta-gradient {
+    background-image: var(--background-image-meta-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
