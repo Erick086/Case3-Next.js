@@ -1,12 +1,12 @@
 # 🎫 Sistema de Chamados de TI | Case Final Trainee - Meta Consultoria
 
-Este é o repositório base para o **Case Final da Trilha de Next.js** do programa de Trainees da Meta Consultoria. O objetivo deste projeto é avaliar o domínio arquitetural do framework, focando no fluxo de dados entre cliente e servidor, mutações e gerenciamento de cache.
+Este é o repositório base para o **Case da Trilha de Next.js** do processo seletivo da Meta Consultoria.
 
 ## 🎯 Sobre o Projeto
 
 A aplicação é um dashboard interno para abertura e acompanhamento de tickets (chamados) de suporte de TI.
 
-**Atenção:** Como parte do desafio arquitetural, este projeto **não utiliza um banco de dados externo**. Toda a camada de persistência de dados deve ser construída manipulando o arquivo local `data/tickets.json` nativamente através do módulo `fs/promises` do Node.js.
+**Atenção:** Toda a camada de persistência de dados deve ser construída manipulando o arquivo local `data/tickets.json` nativamente através do módulo `fs/promises` do Node.js que vocês devem pesquisar por conta própria.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -44,7 +44,7 @@ pnpm dev
 
 ```
 
-3. Abra [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) no seu navegador para ver o resultado inicial.
+1. Abra [http://localhost:3000] no seu navegador para ver o resultado inicial.
 
 ---
 
@@ -61,8 +61,6 @@ pnpm dev
 
 ## 📋 Resumo das Tarefas (O Desafio)
 
-Para aprovação neste case, o sistema deverá contemplar obrigatoriamente:
-
 1. **Persistência Local:** Implementar a leitura e escrita no arquivo `tickets.json` via Server Components e Server Actions.
 2. **Latência Simulada:** Aplicar um delay de pelo menos 2 segundos na função de leitura do servidor para simular uma rede real.
 3. **Estado de Carregamento:** Implementar o arquivo `loading.tsx` exibindo feedback visual durante a simulação do delay.
@@ -75,10 +73,6 @@ _Consulte o documento oficial do case recebido para ler as especificações comp
 
 ## 📚 Documentação e Links Úteis
 
-Se você travar em algum momento, as documentações abaixo serão suas melhores aliadas:
-
 - [Next.js - Data Fetching & Caching](https://nextjs.org/docs/app/building-your-application/data-fetching)
 - [Next.js - Server Actions & Mutations](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
-- [Node.js - File System Promises API (`fs/promises`)](https://www.google.com/search?q=https://nodejs.org/api/fs.html%23promises-api)
-
-Boa sorte e bom código! 💻💙
+- [Node.js - File System Promises API (`fs/promises`)](https://nodejs.org/api/fs.html)
