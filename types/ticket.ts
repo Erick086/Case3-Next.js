@@ -5,4 +5,5 @@ export interface Ticket {
   title: string;
   status: TicketStatus;
   createdAt: string;
+  description?: string;
 }

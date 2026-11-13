@@ -1,5 +1,33 @@
 [
   {
+    "title": "precisa de ssd",
+    "description": "os notebooks estao  lentos",
+    "id": "tkt-1794536295443",
+    "status": "Aberto",
+    "createdAt": "2026-11-13T02:18:15.443Z"
+  },
+  {
+    "title": "Precisa de instalação do windows",
+    "description": "os pcs estao sem o windows",
+    "id": "tkt-1794534941424",
+    "status": "Finalizado",
+    "createdAt": "2026-11-13T01:55:41.424Z"
+  },
+  {
+    "title": "Instalação de softwares",
+    "description": "Instalar e configurar o vs code nos pc's da empresa",
+    "id": "tkt-1794534462713",
+    "status": "Finalizado",
+    "createdAt": "2026-11-13T01:47:42.713Z"
+  },
+  {
+    "title": "Falta de equipamentos",
+    "description": "Esta faltando notebooks",
+    "id": "tkt-1794504822402",
+    "status": "Aberto",
+    "createdAt": "2026-11-12T17:33:42.402Z"
+  },
+  {
     "id": "tkt-001",
     "title": "Internet intermitente na sala de reuniões",
     "status": "Aberto",
